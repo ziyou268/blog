@@ -3,7 +3,7 @@
 		<!-- Begin Main Content ( left col ) -->
 		<section id="main-content">
 		<div id="archive-title">
-			<?php _e("您要搜索的:", "site5framework"); ?> <strong>"<?php /* Search Count */ $allsearch = &new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('"'); echo $key; _e('"'); wp_reset_query(); ?>"</strong>
+			<?php _e("您要搜索的:", "site5framework"); ?> <strong>"<?php /* Search Count */ $allsearch = new WP_Query("s=$s&showposts=-1"); $key = wp_specialchars($s, 1); $count = $allsearch->post_count; _e(''); _e('"'); echo $key; _e('"'); wp_reset_query(); ?>"</strong>
 		</div>
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
 				<!-- Begin Article -->

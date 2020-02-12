@@ -26,10 +26,10 @@ define('DB_NAME', 'blog');
 define('DB_USER', 'blog');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', 'songchun268@.');
+define('DB_PASSWORD', '');
 
 /** MySQL主机 */
-define('DB_HOST', '118.89.196.175');
+define('DB_HOST', '');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8mb4');
